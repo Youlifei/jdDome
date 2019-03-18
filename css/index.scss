@@ -1,0 +1,602 @@
+@charset "utf-8";
+#app{
+    min-height:0;
+    background:#ccc;
+    width:100%;
+}
+//头部广告
+.J_event{
+    width:100%;
+    height:80px;
+    .grid_cl{
+        height:80px;
+        position:relative;
+        span{
+            width:20px;
+            height:20px;
+            color:pink;
+            background:#666666;
+            font-size:20px;
+            text-align:center;
+            line-height:20px;
+            position:absolute;
+            top:3px;
+            right:10px;
+            cursor: pointer;
+         }
+    } 
+}
+
+//导航一
+#shortcut{
+    height:30px;
+    border-bottom:1px solid #ccc;
+    background:#e3e4e5;
+    .w{
+        height:30px;
+        background:#e3e4e5;
+        
+        .fl{
+           width:258px;
+           height:30px;
+           float:left;
+           background:#e3e4e5; 
+           position:relative;
+           .bj_fl1{
+               z-index: 10;
+               float:right;
+               width:50px;
+               height:30px;
+               line-height:29px;
+               padding:0 7px;
+               font-size:10px;
+               position:relative;
+               i{
+                   font-size:14px;
+                   float:left;
+                   color:red;
+               }
+               span{
+                   float:left;
+                   font-size:10px;
+               }
+           }
+           .bj{
+               background:#fff;
+               border:1px solid #ccc;
+               border-bottom:0;
+           }
+           //北京下拉菜单
+           .bj_con1{
+               z-index: 30;
+               display:none;
+               width:300px;
+               height:337px;
+               padding:10px;
+               border:1px solid #ccc;
+               border-top:0;
+               background:#fff;
+               position:absolute;
+               top:30px;
+               left:192px;
+               .bj_conn1{
+                   width:300px;
+                   height:196px;
+                   span{
+                       float:left;
+                        height:24px;
+                       font-size: 12px;
+                       line-height: 24px;
+                       text-align:center;
+                        margin:0 8px;
+                         &:hover{
+                               
+                               background:#E7E1CD;
+                           }
+                   a{
+                           float: left;
+                           height:24px;
+                           padding:0 8px;
+                           font-size: 12px;
+                           line-height: 24px;
+                           text-align:center;
+                          &:hover{
+                              color:red;
+                          }
+                       }
+                   }
+                .bj_red{
+                   background:red;
+                   float: left; 
+                   a{
+                       background:red;
+                       color:#fff;
+                   }
+                }
+               }
+               .bj_conn2{
+                   width:290px;
+                   height:121px;
+                   margin:10px 0 10px 10px;
+                   p{
+                       width:290px;
+                       height:24px;
+                       margin:10px 0;
+                       font-size:12px;
+                       line-height:24px;
+                       border-top:1px dashed #999999;
+                   }
+                   #bj_coonn1{
+                       width:290px;
+                       height:78px;
+                       li{
+                           width:145px;
+                           height:26px;
+                           float:left;
+                           i{
+                               float:left;
+                               display:block;
+                              width:15px;
+                              height:15px;
+                              border:1px solid transparent;
+                              overflow:hidden;
+                              margin-right:8px;
+                              top:7px;
+                              position:relative;
+                              .bj_ccc1{
+                                  position:absolute;
+                              }
+                              .bj_ccc2{
+                                  position:absolute;
+                                  left:-21px;
+                                  border:0.5px solid #999999;
+                              }
+                              .bj_ccc3{
+                                  position:absolute;
+                                  top:-15px;
+                                  border:0.5px solid #999999;
+                              }
+                              .bj_ccc4{
+                                  position:absolute;
+                                  top:-2px;
+                                  left:-40px;
+                                  border:0.5px solid #999999;
+                              }
+                              .bj_ccc5{
+                                  position:absolute;
+                                  top:-13px;
+                                  left:-21px;
+                                  border:0.5px solid #999999;
+                              }
+                           }
+                           span{
+                               float:left;
+                               width:120px;
+                               height:26px;
+                               font-size:12px;
+                               color:#969896;
+                               line-height:26px;
+                               &:hover{
+                                   color:red;
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+        }
+        .fr{
+            width:750px;
+            height:30px;
+            line-height:30px;
+            float:right;
+            li{
+                height:30px;
+                float:left;
+                display:inline-block;
+                position:relative;
+                div{
+                    font-size:12px;
+                    a{
+                        height:30px;
+                       float:left;
+                       font-size:12px;
+                       padding:0 7px;
+                       color:#999;
+                       &:hover{
+                           color:red;
+                           i{
+                               color:#666;
+                           }
+                       }
+                    }
+                    
+                    .zhuce{
+                        color:red;
+                    }
+                }
+                .fr_con2{
+                    width:280px;
+                    height:161px; 
+                }
+                .fr_con3{
+                    width:170px;
+                    height:227px;
+                    padding:10px 0 ;
+                    border:1px solid #ccc;
+                    position:absolute;
+                    left:-94px;
+                    div{
+                        float:left;
+                        a{
+                            padding:0;
+                        }
+                    }
+                    .item_con1{
+                        width:155px;
+                        height:24px;
+                        padding-left:15px;
+                        line-height:24px;
+                        
+                    }
+                    .item_con2{
+                        width:155px;
+                        height:24px;
+                        margin-top:15px;
+                        padding:5px 0 0 15px;
+                        line-height:24px;
+                        text-align:left;
+                        border-top:1px solid #ccc;
+                    }
+                    .item{
+                        text-align:left;
+                        width:70px;
+                        height:24px;
+                        padding-left:15px;
+                    }
+                }
+                .fr_con4{
+                    width:1188px;
+                    height:149px;
+                    border:1px solid #ccc;
+                    border-top:0;
+                    padding:15px 0;
+                    left:-1009px;
+                    div{
+                        float:left;
+                    }
+                    a{
+                        padding:0;
+                    }
+                    .fro_con1{
+                        width:340px;
+                        height:149px;
+                        padding-left:20px;
+                        p{
+                            width:340px;
+                            height:24px;
+                            margin-bottom:5px;
+                            font-family:bolder;
+                        }
+                        a{
+                            width:85px;
+                            height:24px;
+                            float:left;
+                        }
+                    }
+                    .fro_con2{
+                        width:255px;
+                        height:149px;
+                        padding-left:20px;
+                        border-left:1px solid #ccc;
+                        p{
+                            width:340px;
+                            height:24px;
+                            margin-bottom:5px;
+                            font-family:bolder;
+                        }
+                        a{
+                            width:85px;
+                            height:24px;
+                            float:left;
+                        }
+                    }
+                }
+                .fr_ew{
+                    .fr_sji{
+                        z-index: 20;
+                        position:relative;
+                        width:66px;
+                        height:66px;
+                        top:31px;
+                        border:1px solid #e4e4e4;
+                        .fr_sj{
+                            z-index: 21;
+                            top:-8px;
+                            left:27px;
+                            position:absolute;
+                            border-width: 5px;
+                            border-style: solid;
+                            border-color:#e3e4e5 #e3e4e5 #ccc; 
+                          }
+                        img{
+                            z-index: 20;
+                            position:absolute;
+                           width:60px;
+                           height:60px;
+                           margin:4px 3px;
+                        }
+                    }
+                    
+                    
+                }
+                .frew_jod{
+                        position:absolute;
+                        width:190px;
+                        height:306px;
+                        left:-124px;
+                        top:32px;
+                        border:1px solid #ccc;
+                        background:#fff;
+                        border-bottom:3px solid #333333;
+                        dl{
+                            padding:15px 0 15px 5px;
+                            border-bottom:1px solid #ccc;
+                            dt{
+                                border:1px solid #ccc;
+                                 width:74px;
+                                height:74px; 
+                                float:left;
+                                img{
+                                   width:70px;
+                                    height:70px; 
+                                    padding:2px 0 0 2px;
+                                } 
+                                }
+                                dd{
+                                    width:190px;
+                                    height:70px;
+                                    margin:0 10px 0 86px;
+                                    h2{
+                                        font-size: 10px;
+                                        height:17px;
+                                        line-height:17px;
+                                        font-weight: bolder;
+                                    }
+                                    p{
+                                        font-size:12px;
+                                        height:14px;
+                                        line-height:14px;
+                                        margin:3px 0;
+                                        color:red;
+                                    }
+                                    a{
+                                        padding:0;
+                                        width:25px;
+                                        height:25px;
+                                        position:relative;
+                                        margin-right:2px;
+                                        overflow: hidden;
+                                        .frew_jlt1{
+                                            position:absolute;
+                                            top:-26px;
+                                        }
+                                        .frew_jlt2{
+                                            position:absolute;
+                                            top:-52px;
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                .fr_con1{
+                    z-index: 200;
+                    display:none;
+                    position:absolute;
+                    top:30px;
+                    border:1px solid #ccc;
+                    border-top:0;
+                    background:#fff;
+                    .fr_co2{
+                        width:265px;
+                        height:72px;
+                        a{
+                            padding:0;
+                            width:126px;
+                            height:24px;
+                            font-size:12px;
+                            float:left;
+                        }
+                    }
+                    .fr_co3{
+                        width:140px;
+                        height:48px;
+                        a{
+                            padding:0;
+                            width:60px;
+                            height:24px;
+                            float:left;
+                        }
+                    }
+                    .fr_co1{
+                        padding:10px 0 10px 15px;
+                        
+                    }
+                    .fr_coo1{
+                        border-top:1px solid #ccc;
+                    }
+                    
+                }
+            }
+            span{
+                float:left;
+                width:1px;
+                height:10px;
+                margin:0 5px;
+            }
+            .fr_fr1{
+                width:80px;
+            }
+        }
+        
+    }
+}
+
+//搜索导航
+#header{
+    height:140px;
+    .header{
+        height:140px;
+        background:pink;
+        position:relative;
+        .header_l{
+            width:190px;
+            height:170px;
+            position:absolute;
+            top:-30px;
+            overflow: hidden;
+            background:#fff;
+            border-bottom:1px solid #ccc;
+            box-shadow: 0 -5px 30px rgba(0,0,0,0.3);
+            img{
+                position:absolute;
+            }
+            .header_one{
+                position:absolute;
+                .header_oneimg{
+                    position:absolute;
+                }
+            }
+            .header_tow{ 
+                    position:absolute;
+                    width:190px;
+                    height:170px; 
+            }
+            .header_zi{
+                    width:190px;
+                    height:80px;
+                    position: absolute;
+                    top:80px;
+                    h2{
+                        font-size: 16px;
+                        color:rgb(142, 81, 63);
+                        font-weight: bold;
+                        height:20px;
+                        text-align:center;
+                    }
+                    a{
+                        position:absolute;
+                        font-size:12px;
+                        color: rgb(142, 81, 63);
+                        width:60px;
+                        height:20px;
+                        background:#fff;
+                        left:66px;
+                        border-radius: 10px;
+                        text-align:center;
+                        line-height:20px;
+                    }
+                }
+        }
+        .import_l{
+            width:1190px;
+            height:60px;
+            background:yellow;
+            position:relative;
+            .input_w{
+                width:550px;
+                height:35px;
+                position: absolute;
+                top:21px;
+                left:320px;
+                background:#fff;
+                .input_con{
+                    position:relative;
+                    width:500px;
+                    height:35px;
+                     .input_con1{
+                            padding:4px 44px 4px 4px;
+                            width:450px;
+                            height:25px;
+                            border:1px solid #fff;
+                            color:#ccc;
+                        }
+                        
+                    .lx_con{
+                        width:500px;
+                       position:absolute;
+                       background:#fff;
+                        .lx{
+                            cursor: pointer;
+                            border:1px solid #ccc;
+                            font-size:14px;
+                            color:#ccc;
+                            li{
+                                padding:3px 0; 
+                            }
+                           
+                        }
+                    }
+                    
+                    i{
+                      color:#666;
+                      width:19px;
+                      height:15px;
+                      position:absolute;
+                      font-size:24px;
+                      top:5px;
+                      left:466px;
+                    }
+                    .input_con2{
+                        position:absolute;
+                        left:500px;
+                        width:50px;
+                        top:0;
+                        height:35px;
+                        background:red;
+                        line-height:35px;
+                        text-align:center;
+                        i{
+                            left:0;
+                            top:0;
+                            font-size:30px;
+                            color:#fff;
+                            position: absolute;
+                            top:5px;
+                            left:10px;
+                            text-align:center;
+                        }
+                    }
+                }
+                .input_lb{
+                    position: absolute;
+                    width:90px;
+                    height:20px;
+                    overflow: hidden;
+                    top:8px;
+                    padding-left:5px;
+                    a{
+                        font-size:14px;
+                        color:#ccc;
+                    }
+                }
+                .shop_car{
+                    background:#fff;
+                    position:absolute;
+                    width:188px;
+                    height:30px;
+                    border:1px solid #ccc;
+                    padding-bottom:2px;
+                    top:-2px;
+                    left:580px;
+                    h2{
+                        line-height:30px;
+                        text-align:center;
+                        color:red;
+                        font-size:12px;
+                    }
+                }
+            }
+        }
+    }
+}
