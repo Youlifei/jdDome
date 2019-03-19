@@ -10,5 +10,5 @@ body{font-family:"微软雅黑";}
 h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
 .clear_fix:after{content:'.';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
 a{display:block;}
-.grid_cl,.w,.header{width:1190px;margin:0 auto;}
+.grid_cl,.w,.header,.banner{width:1190px;margin:0 auto;}
 

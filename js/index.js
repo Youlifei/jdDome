@@ -41,13 +41,13 @@ $(function(){
 })
 //轮播字
 $(function(){
-	let $inout_lb = $(".input_lb")
+	let $inout_lb = $(".input_lb a")
 	let $inp = $(".input_con .input_con1");
 	let index=0;
-	let timer = setInterval(auto,2500);
+	let timer = setInterval(auto,2000);
 	function auto(){
 		index++;
-		if(index==$(".input_lb a").size()){
+		if(index==$inout_lb.size()){
 			index = 0;
 		}
 		$inout_lb.eq(index).show().siblings().hide();
@@ -56,16 +56,11 @@ $(function(){
 		clearInterval(timer);
 	})
 	$inp.blur(function(){
-		timer = setInterval(auto,2500);
+		timer = setInterval(auto,3000);
 	})
 	$inp.keyup(function(){
 		$inout_lb.hide();
 	})
-	if($inp.html() != ''){
-		$inout_lb.hide();
-	}else{
-		$inout_lb.show();
-	}
 })
 //输入框联想
 	var txt = document.getElementById("txt");
@@ -93,4 +88,33 @@ $(function(){
 		}
 $("#txt").keyup(function(){
 	$(".input_con ul").addClass('lx');
+})
+//购物车
+$(".shop_car1").mouseover(function(){
+	$(this).find(".shop_carcon1").show();
+})
+$(".shop_car1").mouseout(function(){
+	$(this).find(".shop_carcon1").hide();
+})
+//导航二
+$(function(){
+	var $oP = $(".header_c li:first").find("p");
+	let index = 0;
+	let timer = setInterval(auto,1500);
+	function auto(){
+		index++;
+		if(index == $oP.size()){
+			index=0;
+		}
+		$oP.eq(index).show().siblings().hide();
+	}
+	$oP.mouseover(function(){
+		clearInterval(timer);
+	}).mouseout(function(){
+		timer = setInterval(auto,1500);
+	});
+})
+//窗口定位
+$(function(){
+	
 })
